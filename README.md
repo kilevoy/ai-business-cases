@@ -52,7 +52,6 @@ ai-business-cases/
 | 6 | [Автоматизация поиска климатических данных по СП](./cases/business-calculators/climate-sp-atlas/) | ✅ Готов | HTML, CSS, JavaScript, JSON, PWA | [Demo](https://kilevoy.github.io/climate-sp-atlas/) · [Code](https://github.com/kilevoy/climate-sp-atlas) |
 | 7 | [Автоматизация обновления и сравнения прайсов Металл Профиль](./cases/business-calculators/metallprofil-price-tracker/) | ✅ Готов | Python, PyMuPDF, HTML, CSS, JavaScript, JSON | [Demo](https://kilevoy.github.io/-metallprofil-price-tracker/) · [Code](https://github.com/kilevoy/-metallprofil-price-tracker) |
 | 8 | [Автоматизация управленческой отчетности в Power BI](./cases/power-bi-dashboards/revenue-dashboard/) | ✅ Готов | Power BI, DAX | Screenshots |
-| 9 | [AI-помощник по климатическим данным СП](./cases/ai-automation/climate-sp-assistant/) | ✅ Готов | N8N, Kimi API, Telegram | [Workflow JSON](https://github.com/kilevoy/n8n-climate-sp-assistant) · [Demo App](https://kilevoy.github.io/climate-sp-atlas/) |
 
 ---
 
