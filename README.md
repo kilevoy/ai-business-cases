@@ -39,7 +39,7 @@ ai-business-cases/
 
 | # | Кейс | Статус | Технологии | Ссылка |
 |---|------|--------|-----------|--------|
-| 1 | [Калькулятор профилей ЛСТК (ПП/ПГС/ПZ)](./cases/business-calculators/lstk-profile-calculator/) | ✅ Готов | TypeScript, React, Vite, Tailwind | [Demo](https://kilevoy.github.io/gps/) · [Code](https://github.com/kilevoy/lstk-profile-calculator) |
+| 1 | [Автоматизация подбора и расчета ЛСТК-профилей](./cases/business-calculators/lstk-profile-calculator/) | ✅ Готов | TypeScript, React, Vite, Tailwind | [Demo](https://kilevoy.github.io/gps/) · [Code](https://github.com/kilevoy/gps) |
 | 2 | [Калькулятор стального каркаса ЛСТК](./cases/business-calculators/steel-building-calc/) | ✅ Готов | TypeScript, React, Vite, Vitest | — |
 | 3 | [Калькулятор стоимости изделий с покрытием](./cases/business-calculators/coating-processing-calculator/) | ✅ Готов | JavaScript, CSS | [Demo](https://kilevoy.github.io/coating-processing-calculator/) · [Code](https://github.com/kilevoy/coating-processing-calculator) |
 | 4 | [Калькулятор фасадных кассет и НФС](./cases/business-calculators/facade-cassette-calculator/) | ✅ MVP | TypeScript, React, Vite, Excel import | [Demo](https://kilevoy.github.io/fasad/) · [Code](https://github.com/kilevoy/fasad) |
