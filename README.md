@@ -43,10 +43,11 @@ ai-business-cases/
 | 2 | [Автоматизация расчета стоимости покрытия и переработки](./cases/business-calculators/coating-processing-calculator/) | ✅ Готов | JavaScript, CSS, LocalStorage | [Demo](https://kilevoy.github.io/coating-processing-calculator/) · [Code](https://github.com/kilevoy/coating-processing-calculator) |
 | 3 | [Калькулятор фасадных кассет и НФС](./cases/business-calculators/facade-cassette-calculator/) | ✅ MVP | TypeScript, React, Vite, Excel import | [Demo](https://kilevoy.github.io/fasad/) · [Code](https://github.com/kilevoy/fasad) |
 | 4 | [Автоматизация подбора металлокаркаса и ограждающих конструкций](./cases/business-calculators/insi-metalcalc/) | ✅ Готов | TypeScript, React, Vite, Vitest, Playwright | [Demo](https://kilevoy.github.io/insi-next/) · [Code](https://github.com/kilevoy/insi-next) |
-| 5 | CRM-автоматизация отдела продаж | 🚧 В работе | MS Dynamics, 1C, amoCRM | — |
-| 6 | Дашборд управленческой отчётности | 🚧 В работе | Power BI, SQL | — |
-| 7 | AI-ассистент для подготовки КП | 🚧 В работе | Python, OpenAI API | — |
-| 8 | Оптимизация workflow утверждения скидок | 🚧 В работе | Python, n8n | — |
+| 5 | [Автоматизация подбора стального каркаса промышленных зданий](./cases/business-calculators/steel-building-calc/) | 🚧 В разработке | TypeScript, React, Vite, Vitest, HyperFormula | [Demo](https://kilevoy.github.io/steel-building-calc/) · [Code](https://github.com/kilevoy/steel-building-calc) |
+| 6 | CRM-автоматизация отдела продаж | 🚧 В работе | MS Dynamics, 1C, amoCRM | — |
+| 7 | Дашборд управленческой отчётности | 🚧 В работе | Power BI, SQL | — |
+| 8 | AI-ассистент для подготовки КП | 🚧 В работе | Python, OpenAI API | — |
+| 9 | Оптимизация workflow утверждения скидок | 🚧 В работе | Python, n8n | — |
 
 ---
 
