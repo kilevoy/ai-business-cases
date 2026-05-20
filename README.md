@@ -41,7 +41,7 @@ ai-business-cases/
 |---|------|--------|-----------|--------|
 | 1 | [Калькулятор профилей ЛСТК (ПП/ПГС/ПZ)](./cases/business-calculators/lstk-profile-calculator/) | ✅ Готов | TypeScript, React, Vite, Tailwind | [Demo](https://kilevoy.github.io/gps/) · [Code](https://github.com/kilevoy/lstk-profile-calculator) |
 | 2 | [Калькулятор стального каркаса ЛСТК](./cases/business-calculators/steel-building-calc/) | ✅ Готов | TypeScript, React, Vite, Vitest | — |
-| 3 | [Калькулятор покрытия и переработки ЛСТК](./cases/business-calculators/coating-processing-calculator/) | ✅ Готов | JavaScript, CSS | [Demo](https://kilevoy.github.io/coating-processing-calculator/) · [Code](https://github.com/kilevoy/coating-processing-calculator) |
+| 3 | [Калькулятор стоимости изделий с покрытием](./cases/business-calculators/coating-processing-calculator/) | ✅ Готов | JavaScript, CSS | [Demo](https://kilevoy.github.io/coating-processing-calculator/) · [Code](https://github.com/kilevoy/coating-processing-calculator) |
 | 4 | CRM-автоматизация отдела продаж | 🚧 В работе | MS Dynamics, 1C, amoCRM | — |
 | 5 | Дашборд управленческой отчётности | 🚧 В работе | Power BI, SQL | — |
 | 6 | AI-ассистент для подготовки КП | 🚧 В работе | Python, OpenAI API | — |
