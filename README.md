@@ -39,11 +39,12 @@ ai-business-cases/
 
 | # | Кейс | Статус | Технологии |
 |---|------|--------|-----------|
-| 1 | CRM-автоматизация отдела продаж | 🚧 В работе | MS Dynamics, 1C, amoCRM |
-| 2 | Дашборд управленческой отчётности | 🚧 В работе | Power BI, SQL |
-| 3 | Калькулятор металлоконструкций | 🚧 В работе | TypeScript, React |
-| 4 | AI-ассистент для подготовки КП | 🚧 В работе | Python, OpenAI API |
-| 5 | Оптимизация workflow утверждения скидок | 🚧 В работе | Python, n8n |
+| 1 | [Калькулятор стального каркаса ЛСТК](./cases/business-calculators/steel-building-calc/) | ✅ Готов | TypeScript, React, Vite, Vitest |
+| 2 | [Калькулятор профилей ЛСТК (ПП/ПГС/ПZ)](./cases/business-calculators/gps-profile-calculator/) | ✅ Готов | TypeScript, React, Vite, Tailwind |
+| 3 | CRM-автоматизация отдела продаж | 🚧 В работе | MS Dynamics, 1C, amoCRM |
+| 4 | Дашборд управленческой отчётности | 🚧 В работе | Power BI, SQL |
+| 5 | AI-ассистент для подготовки КП | 🚧 В работе | Python, OpenAI API |
+| 6 | Оптимизация workflow утверждения скидок | 🚧 В работе | Python, n8n |
 
 ---
 
