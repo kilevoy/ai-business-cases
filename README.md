@@ -44,10 +44,11 @@ ai-business-cases/
 | 3 | [Калькулятор фасадных кассет и НФС](./cases/business-calculators/facade-cassette-calculator/) | ✅ MVP | TypeScript, React, Vite, Excel import | [Demo](https://kilevoy.github.io/fasad/) · [Code](https://github.com/kilevoy/fasad) |
 | 4 | [Автоматизация подбора металлокаркаса и ограждающих конструкций](./cases/business-calculators/insi-metalcalc/) | ✅ Готов | TypeScript, React, Vite, Vitest, Playwright | [Demo](https://kilevoy.github.io/insi-next/) · [Code](https://github.com/kilevoy/insi-next) |
 | 5 | [Автоматизация подбора стального каркаса промышленных зданий](./cases/business-calculators/steel-building-calc/) | 🚧 В разработке | TypeScript, React, Vite, Vitest, HyperFormula | [Demo](https://kilevoy.github.io/steel-building-calc/) · [Code](https://github.com/kilevoy/steel-building-calc) |
-| 6 | CRM-автоматизация отдела продаж | 🚧 В работе | MS Dynamics, 1C, amoCRM | — |
-| 7 | Дашборд управленческой отчётности | 🚧 В работе | Power BI, SQL | — |
-| 8 | AI-ассистент для подготовки КП | 🚧 В работе | Python, OpenAI API | — |
-| 9 | Оптимизация workflow утверждения скидок | 🚧 В работе | Python, n8n | — |
+| 6 | [Автоматизация поиска климатических данных по СП](./cases/business-calculators/climate-sp-atlas/) | ✅ Готов | HTML, CSS, JavaScript, JSON, PWA | [Demo](https://kilevoy.github.io/climate-sp-atlas/) · [Code](https://github.com/kilevoy/climate-sp-atlas) |
+| 7 | CRM-автоматизация отдела продаж | 🚧 В работе | MS Dynamics, 1C, amoCRM | — |
+| 8 | Дашборд управленческой отчётности | 🚧 В работе | Power BI, SQL | — |
+| 9 | AI-ассистент для подготовки КП | 🚧 В работе | Python, OpenAI API | — |
+| 10 | Оптимизация workflow утверждения скидок | 🚧 В работе | Python, n8n | — |
 
 ---
 
