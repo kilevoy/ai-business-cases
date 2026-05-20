@@ -83,8 +83,8 @@
 
 ## 🔗 Links
 
+- **Рабочая страница калькулятора:** https://kilevoy.github.io/gps/
 - **Исходный код:** https://github.com/kilevoy/lstk-profile-calculator
-- **Компаньон (покрытие + переработка):** https://github.com/kilevoy/coating-processing-calculator
 
 ---
 
