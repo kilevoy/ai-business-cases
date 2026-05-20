@@ -23,11 +23,13 @@
 ```
 ai-business-cases/
 ├── cases/
-│   ├── crm-automation/          # Автоматизация CRM (MS Dynamics, 1C, amoCRM)
-│   ├── power-bi-dashboards/     # Дашборды и аналитика
-│   ├── business-calculators/    # Калькуляторы и сервисы для ускорения КП
-│   ├── workflow-optimization/   # Оптимизация бизнес-процессов
-│   └── ai-integration/          # Интеграция AI в рабочие процессы
+│   └── business-calculators/    # Инженерные и коммерческие инструменты
+│       ├── lstk-profile-calculator/
+│       ├── coating-processing-calculator/
+│       ├── facade-cassette-calculator/
+│       ├── insi-metalcalc/
+│       ├── steel-building-calc/
+│       └── climate-sp-atlas/
 ├── assets/                      # Скриншоты, диаграммы, превью
 ├── docs/                        # Дополнительная документация
 └── README.md
