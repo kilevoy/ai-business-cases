@@ -39,7 +39,7 @@ ai-business-cases/
 
 | # | Кейс | Статус | Технологии | Ссылка |
 |---|------|--------|-----------|--------|
-| 1 | [Калькулятор профилей ЛСТК (ПП/ПГС/ПZ)](./cases/business-calculators/lstk-profile-calculator/) | ✅ Готов | TypeScript, React, Vite, Tailwind | https://github.com/kilevoy/lstk-profile-calculator |
+| 1 | [Калькулятор профилей ЛСТК (ПП/ПГС/ПZ)](./cases/business-calculators/lstk-profile-calculator/) | ✅ Готов | TypeScript, React, Vite, Tailwind | [Demo](https://kilevoy.github.io/gps/) · [Code](https://github.com/kilevoy/lstk-profile-calculator) |
 | 2 | [Калькулятор стального каркаса ЛСТК](./cases/business-calculators/steel-building-calc/) | ✅ Готов | TypeScript, React, Vite, Vitest | — |
 | 3 | CRM-автоматизация отдела продаж | 🚧 В работе | MS Dynamics, 1C, amoCRM | — |
 | 4 | Дашборд управленческой отчётности | 🚧 В работе | Power BI, SQL | — |
