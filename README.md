@@ -41,7 +41,7 @@ ai-business-cases/
 |---|------|--------|-----------|--------|
 | 1 | [Автоматизация подбора и расчета ЛСТК-профилей](./cases/business-calculators/lstk-profile-calculator/) | ✅ Готов | TypeScript, React, Vite, Tailwind | [Demo](https://kilevoy.github.io/gps/) · [Code](https://github.com/kilevoy/gps) |
 | 2 | [Калькулятор стального каркаса ЛСТК](./cases/business-calculators/steel-building-calc/) | ✅ Готов | TypeScript, React, Vite, Vitest | — |
-| 3 | [Калькулятор стоимости изделий с покрытием](./cases/business-calculators/coating-processing-calculator/) | ✅ Готов | JavaScript, CSS | [Demo](https://kilevoy.github.io/coating-processing-calculator/) · [Code](https://github.com/kilevoy/coating-processing-calculator) |
+| 3 | [Автоматизация расчета стоимости покрытия и переработки](./cases/business-calculators/coating-processing-calculator/) | ✅ Готов | JavaScript, CSS, LocalStorage | [Demo](https://kilevoy.github.io/coating-processing-calculator/) · [Code](https://github.com/kilevoy/coating-processing-calculator) |
 | 4 | [Калькулятор фасадных кассет и НФС](./cases/business-calculators/facade-cassette-calculator/) | ✅ MVP | TypeScript, React, Vite, Excel import | [Demo](https://kilevoy.github.io/fasad/) · [Code](https://github.com/kilevoy/fasad) |
 | 5 | CRM-автоматизация отдела продаж | 🚧 В работе | MS Dynamics, 1C, amoCRM | — |
 | 6 | Дашборд управленческой отчётности | 🚧 В работе | Power BI, SQL | — |
