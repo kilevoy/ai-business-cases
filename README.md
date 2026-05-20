@@ -23,13 +23,15 @@
 ```
 ai-business-cases/
 ├── cases/
-│   └── business-calculators/    # Инженерные и коммерческие инструменты
-│       ├── lstk-profile-calculator/
-│       ├── coating-processing-calculator/
-│       ├── facade-cassette-calculator/
-│       ├── insi-metalcalc/
-│       ├── steel-building-calc/
-│       └── climate-sp-atlas/
+│   ├── business-calculators/    # Инженерные и коммерческие инструменты
+│   │   ├── lstk-profile-calculator/
+│   │   ├── coating-processing-calculator/
+│   │   ├── facade-cassette-calculator/
+│   │   ├── insi-metalcalc/
+│   │   ├── steel-building-calc/
+│   │   └── climate-sp-atlas/
+│   └── power-bi-dashboards/     # Управленческие BI-дашборды
+│       └── revenue-dashboard/
 ├── assets/                      # Скриншоты, диаграммы, превью
 ├── docs/                        # Дополнительная документация
 └── README.md
@@ -47,12 +49,14 @@ ai-business-cases/
 | 4 | [Автоматизация подбора металлокаркаса и ограждающих конструкций](./cases/business-calculators/insi-metalcalc/) | ✅ Готов | TypeScript, React, Vite, Vitest, Playwright | [Demo](https://kilevoy.github.io/insi-next/) · [Code](https://github.com/kilevoy/insi-next) |
 | 5 | [Автоматизация подбора стального каркаса промышленных зданий](./cases/business-calculators/steel-building-calc/) | 🚧 В разработке | TypeScript, React, Vite, Vitest, HyperFormula | [Demo](https://kilevoy.github.io/steel-building-calc/) · [Code](https://github.com/kilevoy/steel-building-calc) |
 | 6 | [Автоматизация поиска климатических данных по СП](./cases/business-calculators/climate-sp-atlas/) | ✅ Готов | HTML, CSS, JavaScript, JSON, PWA | [Demo](https://kilevoy.github.io/climate-sp-atlas/) · [Code](https://github.com/kilevoy/climate-sp-atlas) |
+| 7 | [Автоматизация управленческой отчетности по выручке в Power BI](./cases/power-bi-dashboards/revenue-dashboard/) | ✅ Готов | Power BI, DAX, Power Query, Excel / 1C data | Screenshots |
 
 ---
 
 ## 🛠 Стек технологий
 
 **Инженерные и бизнес-инструменты:**
+- Power BI, DAX, Power Query
 - Excel-калькуляторы и workbook-backed reference data
 - Нормативные справочники и расчетные таблицы
 - Коммерческие расчеты, спецификации, подготовка КП
