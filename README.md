@@ -35,7 +35,8 @@ ai-business-cases/
 │   ├── power-bi-dashboards/     # Управленческие BI-дашборды
 │   │   └── revenue-dashboard/
 │   └── ai-automation/           # AI/N8N-автоматизации
-│       └── climate-sp-assistant/
+│       ├── climate-sp-assistant/
+│       └── meeting-audio-tasks-agent/
 ├── assets/                      # Скриншоты, диаграммы, превью
 ├── docs/                        # Дополнительная документация
 └── README.md
@@ -57,6 +58,7 @@ ai-business-cases/
 | 8 | [Автоматизация управленческой отчетности в Power BI](./cases/power-bi-dashboards/revenue-dashboard/) | ✅ Готов | Power BI, DAX | Screenshots |
 | 9 | [Telegram-бот по климатическим данным СП](./cases/ai-automation/climate-sp-assistant/) | ✅ Готов | n8n, Telegram Bot API, JavaScript, JSON | [Demo App](https://kilevoy.github.io/climate-sp-atlas/) · [Data](https://kilevoy.github.io/climate-sp-atlas/settlements-climate.json) |
 | 10 | [КМД → ведомость металла ИНСИ](./cases/business-calculators/metal-spec-parser-insi/) | 🚧 В разработке | Python, FastAPI, React, TypeScript, PDF/Excel parsing | [Code](https://github.com/kilevoy/KMD/tree/main/cases/metal-spec-parser-insi) |
+| 11 | [ИИ-агент планерок: аудио → поручения → контроль задач](./cases/ai-automation/meeting-audio-tasks-agent/) | ✅ MVP | n8n, Telegram Bot API, OpenAI, Google Sheets | n8n Workflow · Portfolio case |
 
 ---
 
