@@ -74,8 +74,8 @@ Telegram Bot → N8N Webhook → HTTP Request (GitHub JSON) → Code (поиск
 | Layer | Tech |
 |-------|------|
 | Workflow Engine | N8N (визуальный редактор, no-code) |
-| LLM | Kimi 2.6 (Moonshot AI API, облачный) |
-| Data Source | JSON-справочник climatesp-atlas (1096 населённых пунктов) |
+| LLM | **Ollama** (Kimi 2.6:cloud, локальный/удалённый сервер) |
+| Data Source | JSON-справочник climate-sp-atlas (1096 населённых пунктов) |
 | Messenger | Telegram Bot API |
 | Деплой | N8N Cloud или Self-hosted |
 
