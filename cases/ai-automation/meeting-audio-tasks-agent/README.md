@@ -1,6 +1,6 @@
-# ИИ-агент планерок: аудио → поручения → контроль задач
+# ИИ-агент планерок: расшифровка → поручения → контроль задач
 
-> n8n + Telegram + OpenAI workflow для строительной команды: руководитель отправляет аудио планерки, система расшифровывает запись, выделяет поручения, записывает реестр задач и отправляет сводку в Telegram.
+> n8n + Telegram + OpenRouter workflow для строительной команды: руководитель отправляет текст расшифровки планерки, система выделяет поручения, записывает реестр задач и отправляет сводку в Telegram.
 
 ---
 
@@ -20,16 +20,15 @@
 
 ## What Was Built
 
-**Статус: 🚧 в разработке.** Workflow создан как MVP-заготовка в n8n Cloud; перед рабочей публикацией нужно подключить OpenAI API, Google Sheets и выбрать таблицу реестра.
+**Статус: 🚧 в разработке.** Workflow создан как MVP-заготовка в n8n Cloud; перед рабочей публикацией нужно подключить OpenRouter API, Google Sheets и выбрать таблицу реестра.
 
-Создан MVP workflow в n8n, который принимает голосовое или аудиофайл в Telegram, расшифровывает запись через OpenAI, извлекает поручения в структурированный JSON, записывает результат в Google Sheets и отправляет руководителю Telegram-сводку.
+Создан MVP workflow в n8n, который принимает текст расшифровки или заметки планерки в Telegram, отправляет их в OpenRouter-compatible LLM, извлекает поручения в структурированный JSON, записывает результат в Google Sheets и отправляет руководителю Telegram-сводку.
 
 | Feature | Description |
 |---------|-------------|
-| Telegram intake | Руководитель отправляет голосовое сообщение или аудиофайл в бот |
-| Audio download | n8n скачивает файл через Telegram Bot API |
-| Transcription | OpenAI transcribe превращает аудио в текст |
-| Action extraction | OpenAI response извлекает задачи, исполнителей, сроки, объект и приоритет |
+| Telegram intake | Руководитель отправляет текст расшифровки или заметки планерки в бот |
+| LLM gateway | n8n вызывает OpenRouter через OpenAI-compatible Chat Completions API |
+| Action extraction | OpenRouter-модель извлекает задачи, исполнителей, сроки, объект и приоритет |
 | Structured JSON | Результат сохраняется как `tasks_json` для дальнейшей обработки |
 | Task register | Google Sheets получает строку реестра по каждой планерке |
 | Telegram summary | Бот отправляет краткую сводку поручений обратно руководителю |
@@ -39,11 +38,11 @@
 
 ## Process Automated
 
-1. Руководитель отправляет аудио планерки в Telegram-бот.
+1. Руководитель отправляет текст расшифровки планерки в Telegram-бот.
 2. Telegram Trigger запускает workflow.
-3. Telegram node скачивает аудиофайл.
-4. OpenAI transcribe создает расшифровку.
-5. OpenAI response выделяет поручения в JSON.
+3. Code node готовит OpenRouter request body.
+4. HTTP Request вызывает `https://openrouter.ai/api/v1/chat/completions`.
+5. OpenRouter-модель выделяет поручения в JSON.
 6. Code node нормализует данные для реестра и Telegram-сводки.
 7. Google Sheets append сохраняет запись планерки.
 8. Telegram отправляет итог: сколько поручений найдено, кому назначены, какие сроки и приоритеты.
@@ -54,17 +53,16 @@
 
 | Node | Role |
 |------|------|
-| `Telegram: Meeting Audio` | Принимает входящее сообщение с голосом или аудио |
-| `Telegram: Download Audio` | Скачивает файл из Telegram |
-| `OpenAI: Transcribe Meeting Audio` | Расшифровывает русскоязычную запись |
-| `OpenAI: Extract Action Items` | Извлекает поручения в JSON |
+| `Telegram: Meeting Transcript` | Принимает входящий текст с расшифровкой или заметками планерки |
+| `Prepare OpenRouter Request` | Собирает payload для OpenRouter Chat Completions API |
+| `OpenRouter: Extract Action Items` | Извлекает поручения в JSON через OpenRouter-модель |
 | `Build Task Register Row` | Готовит поля для Google Sheets и Telegram |
 | `Google Sheets: Append Meeting Tasks` | Записывает строку в реестр планерок |
 | `Telegram: Send Task Summary` | Возвращает руководителю краткий список задач |
 
 Workflow создан в n8n Cloud:
 
-- **Name:** `Meeting Audio → Tasks Agent`
+- **Name:** `Meeting Transcript → Tasks Agent (OpenRouter)`
 - **Workflow ID:** `4Be36kZCEGlagiXB`
 - **Status:** draft / needs credentials setup before publish
 
@@ -105,7 +103,7 @@ MVP сохраняет одну строку на планерку:
 | `summary` | Краткое содержание |
 | `tasks_count` | Количество найденных поручений |
 | `tasks_json` | Полный JSON задач |
-| `transcript` | Расшифровка аудио |
+| `transcript` | Текст расшифровки или заметки планерки |
 | `telegram_summary` | Текст отправленного сообщения |
 
 Следующий шаг развития: развернуть `tasks_json` в отдельные строки по каждой задаче и добавить ежедневный контроль просрочек.
@@ -118,8 +116,8 @@ MVP сохраняет одну строку на планерку:
 |-------|------|
 | Automation | n8n Cloud |
 | Input channel | Telegram Bot API |
-| Speech-to-text | OpenAI audio transcription |
-| Task extraction | OpenAI Responses API |
+| LLM gateway | OpenRouter |
+| Task extraction | OpenAI-compatible Chat Completions API |
 | Data register | Google Sheets |
 | Logic | JavaScript Code node |
 | Notification | Telegram message |
@@ -129,7 +127,7 @@ MVP сохраняет одну строку на планерку:
 ## Business Impact
 
 - **Экономия времени руководителя:** не нужно вручную писать протокол после каждой планерки.
-- **Меньше потерянных поручений:** задачи извлекаются из аудио и сохраняются в реестр.
+- **Меньше потерянных поручений:** задачи извлекаются из расшифровки планерки и сохраняются в реестр.
 - **Прозрачность ответственности:** у задачи есть исполнитель, срок, объект и приоритет.
 - **Быстрый контроль:** руководитель сразу получает сводку в Telegram.
 - **Основа для управления статусами:** реестр можно связать с CRM, задачником или ежедневными напоминаниями.
@@ -141,11 +139,13 @@ MVP сохраняет одну строку на планерку:
 Перед публикацией workflow нужно подключить credentials:
 
 - `Telegram account` — уже используется существующим Telegram-ботом;
-- `OpenAI API` — для транскрибации и извлечения поручений;
+- `OpenRouter API Key` — HTTP Header Auth credential для извлечения поручений;
 - `Google Sheets` — для записи в реестр;
 - выбрать Google Sheet document и sheet в ноде `Google Sheets: Append Meeting Tasks`.
 
 Секреты и токены не хранятся в репозитории.
+
+Аудио-транскрибация вынесена в следующий этап: ее можно добавить перед OpenRouter через отдельный STT-сервис, например Whisper-compatible API, Deepgram, AssemblyAI или другой доступный провайдер.
 
 ---
 
@@ -155,7 +155,7 @@ MVP сохраняет одну строку на планерку:
 
 - Make / n8n;
 - Telegram Bot API;
-- ChatGPT / OpenAI API;
+- OpenRouter / OpenAI-compatible LLM API;
 - автоматизация постановки и контроля задач;
 - работа с Google Sheets;
 - строительная специфика: объекты, подрядчики, сроки, планерки;
