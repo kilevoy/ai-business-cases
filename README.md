@@ -33,7 +33,8 @@ ai-business-cases/
 │   │   ├── metal-spec-parser-insi/
 │   │   └── metallprofil-price-tracker/
 │   ├── power-bi-dashboards/     # Управленческие BI-дашборды
-│   │   └── revenue-dashboard/
+│   │   ├── revenue-dashboard/
+│   │   └── b2b-auto-parts-dashboard/
 │   └── ai-automation/           # AI/N8N-автоматизации
 │       ├── climate-sp-assistant/
 │       └── meeting-audio-tasks-agent/
@@ -59,6 +60,7 @@ ai-business-cases/
 | 9 | [Telegram-бот по климатическим данным СП](./cases/ai-automation/climate-sp-assistant/) | ✅ Готов | n8n, Telegram Bot API, JavaScript, JSON | [Demo App](https://kilevoy.github.io/climate-sp-atlas/) · [Data](https://kilevoy.github.io/climate-sp-atlas/settlements-climate.json) |
 | 10 | [КМД → ведомость металла ИНСИ](./cases/business-calculators/metal-spec-parser-insi/) | 🚧 В разработке | Python, FastAPI, React, TypeScript, PDF/Excel parsing | [Code](https://github.com/kilevoy/KMD/tree/main/cases/metal-spec-parser-insi) |
 | 11 | [ИИ-агент планерок: расшифровка → поручения → контроль задач](./cases/ai-automation/meeting-audio-tasks-agent/) | 🚧 В разработке | n8n, Telegram Bot API, OpenRouter, Google Sheets | n8n Workflow · Portfolio case |
+| 12 | [B2B-дашборд продаж, маржи, склада и дебиторки автозапчастей](./cases/power-bi-dashboards/b2b-auto-parts-dashboard/) | ✅ Готов | TypeScript, React, Vite, Tailwind, Recharts | [Demo](https://kilevoy.github.io/dashboard/) · [Code](https://github.com/kilevoy/dashboard) |
 
 ---
 
