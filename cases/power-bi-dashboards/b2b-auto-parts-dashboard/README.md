@@ -6,6 +6,16 @@
 
 ---
 
+## Links
+
+- [Live demo](https://kilevoy.github.io/dashboard/)
+- [Source code in this case](./app/)
+- [Deployment repository](https://github.com/kilevoy/dashboard)
+
+> `kilevoy/dashboard` используется как GitHub Pages deployment repository. Исходники также сохранены прямо в этом кейсе в папке [`app/`](./app/), чтобы портфолио было самодостаточным и проверяемым.
+
+---
+
 ## Business Problem
 
 В B2B-продажах автозапчастей коммерческому руководителю нужно быстро понимать не только выручку, но и качество этой выручки: маржу, вклад клиентов и регионов, просроченную дебиторку, выполнение плана менеджерами и состояние складских остатков.
@@ -33,9 +43,33 @@
 | Product margin | Аналитика товарных групп, SKU, маржи, оборачиваемости и кандидатов на пересмотр цены |
 | Inventory analytics | Остатки по складам, медленная оборачиваемость, избыточный запас и дефицит |
 | Managers performance | План-факт, выручка, маржа, активные клиенты, скидки и дебиторка по менеджерам |
-| Accounts receivable | Aging buckets, динамика просрочки, дебиторка по менеджерам и регионам |
+| Accounts receivable | Сроки просрочки, динамика просрочки, дебиторка по менеджерам и регионам |
 | Global filters | Период, регион, менеджер, группа, склад, тип клиента, статус оплаты и быстрый поиск |
 | CSV export | Выгрузка таблиц для дальнейшего анализа |
+
+---
+
+## Screenshots
+
+### Executive Overview
+
+![Executive Overview](../../../assets/power-bi-dashboards/b2b-auto-parts-dashboard/executive-overview.png)
+
+### Clients / ABC
+
+![Clients ABC](../../../assets/power-bi-dashboards/b2b-auto-parts-dashboard/clients-abc.png)
+
+### Inventory
+
+![Inventory](../../../assets/power-bi-dashboards/b2b-auto-parts-dashboard/inventory.png)
+
+### Accounts Receivable
+
+![Accounts Receivable](../../../assets/power-bi-dashboards/b2b-auto-parts-dashboard/accounts-receivable.png)
+
+### Managers Performance
+
+![Managers Performance](../../../assets/power-bi-dashboards/b2b-auto-parts-dashboard/managers-performance.png)
 
 ---
 
@@ -79,8 +113,10 @@
 
 ---
 
-## Links
+## How To Run
 
-- [Demo](https://kilevoy.github.io/dashboard/)
-- [Code](https://github.com/kilevoy/dashboard)
-
+```bash
+cd app
+npm install
+npm run dev
+```
