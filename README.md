@@ -10,7 +10,7 @@
 
 - Руководил отделом до 85 человек, оборот >1 млрд руб.
 - Внедрял MS Dynamics, 1C CRM, amoCRM
-- Строил дашборды Power BI с 2016 года
+- Строил управленческие дашборды продаж, маржи, склада и дебиторки
 - Разрабатывал калькуляторы и сервисы, ускоряющие подготовку КП на 30%
 - Сейчас: переход в AI-автоматизацию бизнес-процессов
 
@@ -32,12 +32,13 @@ ai-business-cases/
 │   │   ├── climate-sp-atlas/
 │   │   ├── metal-spec-parser-insi/
 │   │   └── metallprofil-price-tracker/
-│   ├── power-bi-dashboards/     # Управленческие BI-дашборды
+│   ├── power-bi-dashboards/     # Исторические BI-дашборды и React-дашборды
 │   │   ├── revenue-dashboard/
 │   │   └── b2b-auto-parts-dashboard/
 │   └── ai-automation/           # AI/N8N-автоматизации
 │       ├── climate-sp-assistant/
-│       └── meeting-audio-tasks-agent/
+│       ├── meeting-audio-tasks-agent/
+│       └── contract-risk-auditor/
 ├── assets/                      # Скриншоты, диаграммы, превью
 ├── docs/                        # Дополнительная документация
 └── README.md
@@ -56,40 +57,48 @@ ai-business-cases/
 | 5 | [Автоматизация подбора стального каркаса промышленных зданий](./cases/business-calculators/steel-building-calc/) | 🚧 В разработке | TypeScript, React, Vite, Vitest, HyperFormula | [Demo](https://kilevoy.github.io/steel-building-calc/) · [Code](https://github.com/kilevoy/steel-building-calc) |
 | 6 | [Автоматизация поиска климатических данных по СП](./cases/business-calculators/climate-sp-atlas/) | ✅ Готов | HTML, CSS, JavaScript, JSON, PWA | [Demo](https://kilevoy.github.io/climate-sp-atlas/) · [Code](https://github.com/kilevoy/climate-sp-atlas) |
 | 7 | [Автоматизация обновления и сравнения прайсов Металл Профиль](./cases/business-calculators/metallprofil-price-tracker/) | ✅ Готов | Python, PyMuPDF, HTML, CSS, JavaScript, JSON | [Demo](https://kilevoy.github.io/-metallprofil-price-tracker/) · [Code](https://github.com/kilevoy/-metallprofil-price-tracker) |
-| 8 | [Автоматизация управленческой отчетности в Power BI](./cases/power-bi-dashboards/revenue-dashboard/) | ✅ Готов | Power BI, DAX | Screenshots |
+| 8 | [Автоматизация управленческой отчетности](./cases/power-bi-dashboards/revenue-dashboard/) | ✅ Готов | BI, DAX, Power Query | Screenshots |
 | 9 | [Telegram-бот по климатическим данным СП](./cases/ai-automation/climate-sp-assistant/) | ✅ Готов | n8n, Telegram Bot API, JavaScript, JSON | [Demo App](https://kilevoy.github.io/climate-sp-atlas/) · [Data](https://kilevoy.github.io/climate-sp-atlas/settlements-climate.json) |
 | 10 | [КМД → ведомость металла ИНСИ](./cases/business-calculators/metal-spec-parser-insi/) | 🚧 В разработке | Python, FastAPI, React, TypeScript, PDF/Excel parsing | [Code](https://github.com/kilevoy/KMD/tree/main/cases/metal-spec-parser-insi) |
 | 11 | [ИИ-агент планерок: расшифровка → поручения → контроль задач](./cases/ai-automation/meeting-audio-tasks-agent/) | 🚧 В разработке | n8n, Telegram Bot API, OpenRouter, Google Sheets | n8n Workflow · Portfolio case |
 | 12 | [B2B-дашборд продаж, маржи, склада и дебиторки автозапчастей](./cases/power-bi-dashboards/b2b-auto-parts-dashboard/) | ✅ Готов | TypeScript, React, Vite, Tailwind, Recharts | [Demo](https://kilevoy.github.io/dashboard/) · [Source](./cases/power-bi-dashboards/b2b-auto-parts-dashboard/app/) · [Deploy repo](https://github.com/kilevoy/dashboard) |
+| 13 | [AI Contract Risk Auditor: Telegram-бот для юридического риск-аудита договоров](./cases/ai-automation/contract-risk-auditor/) | ✅ MVP | n8n, Telegram Bot API, OpenRouter, JavaScript, Markdown | n8n Workflow · Portfolio case |
 
 ---
 
 ## 🛠 Стек технологий
 
 **Инженерные и бизнес-инструменты:**
-- Power BI, DAX, Power Query
-- Excel-калькуляторы и workbook-backed reference data
-- Нормативные справочники и расчетные таблицы
-- Коммерческие расчеты, спецификации, подготовка КП
+- управленческие дашборды и коммерческая аналитика;
+- Excel-калькуляторы и workbook-backed reference data;
+- нормативные справочники и расчетные таблицы;
+- коммерческие расчеты, спецификации, подготовка КП.
 
 **Разработка:**
-- TypeScript / JavaScript
-- React / Vite
-- HTML / CSS / PWA
-- Python-скрипты для извлечения и сверки данных
-- PDF parsing, JSON, локальная автоматизация
+- TypeScript / JavaScript;
+- React / Vite;
+- HTML / CSS / PWA;
+- Python-скрипты для извлечения и сверки данных;
+- PDF parsing, JSON, локальная автоматизация.
+
+**AI-автоматизация:**
+- n8n Cloud;
+- Telegram Bot API;
+- OpenRouter / OpenAI-compatible API;
+- LLM prompts, structured output, Markdown reports;
+- Google Sheets и файловые workflow.
 
 **Проверка и публикация:**
-- Vitest / Playwright
-- JSON-справочники и generated reference modules
-- GitHub Pages
-- GitHub Actions
+- Vitest / Playwright;
+- JSON-справочники и generated reference modules;
+- GitHub Pages;
+- GitHub Actions.
 
 ---
 
 ## 🚀 Цель
 
-Показать подход к автоматизации бизнес-процессов на стыке коммерческой работы, инженерных расчетов и разработки: переводить ручные Excel-сценарии, справочники и повторяемые расчеты в понятные веб-инструменты, которые ускоряют подготовку КП, снижают риск ошибок и стандартизируют работу команды.
+Показать подход к автоматизации бизнес-процессов на стыке коммерческой работы, инженерных расчетов, AI-автоматизации и разработки: переводить ручные Excel-сценарии, справочники, договорные проверки и повторяемые расчеты в понятные инструменты, которые ускоряют подготовку КП, снижают риск ошибок и стандартизируют работу команды.
 
 ---
 
