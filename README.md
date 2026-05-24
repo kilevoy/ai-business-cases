@@ -64,7 +64,7 @@ ai-business-cases/
 | 11 | [ИИ-агент планерок: расшифровка → поручения → контроль задач](./cases/ai-automation/meeting-audio-tasks-agent/) | 🚧 В разработке | n8n, Telegram Bot API, OpenRouter, Google Sheets | n8n Workflow · Portfolio case |
 | 12 | [B2B-дашборд продаж, маржи, склада и дебиторки автозапчастей](./cases/power-bi-dashboards/b2b-auto-parts-dashboard/) | ✅ Готов | TypeScript, React, Vite, Tailwind, Recharts | [Demo](https://kilevoy.github.io/dashboard/) · [Source](./cases/power-bi-dashboards/b2b-auto-parts-dashboard/app/) · [Deploy repo](https://github.com/kilevoy/dashboard) |
 | 13 | [AI Contract Risk Auditor: Telegram-бот для юридического риск-аудита договоров](./cases/ai-automation/contract-risk-auditor/) | ✅ MVP | n8n, Telegram Bot API, OpenRouter, JavaScript, Markdown | n8n Workflow · Portfolio case |
-| 14 | [Автоматизация конкурентной разведки и парсинга e-commerce каталога](./cases/business-calculators/one-chip-parser/) | ✅ Готов | Python, Requests, BeautifulSoup, Tkinter, PyInstaller | [Code](https://github.com/kilevoy/one-chip-parser) |
+| 14 | [Автоматизация конкурентной разведки и парсинга e-commerce каталога](./cases/business-calculators/one-chip-parser/) | ✅ Готов | Python, Requests, BeautifulSoup, Tkinter, PyInstaller | [Demo](https://kilevoy.github.io/one-chip-parser/) · [Code](https://github.com/kilevoy/one-chip-parser) |
 
 ---
 

@@ -82,6 +82,7 @@
 
 ## Links
 
+- **Demo:** https://kilevoy.github.io/one-chip-parser/
 - **Code:** https://github.com/kilevoy/one-chip-parser
 
 ---
